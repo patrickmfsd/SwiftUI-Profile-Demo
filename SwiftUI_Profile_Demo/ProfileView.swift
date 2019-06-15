@@ -34,8 +34,8 @@ struct ProfileView: View {
                 VStack {
                     Text("Use Sliders to Adjust Header Background Color:")
                     colorSlider(value: $rValue, textColor: .red)
-                    colorSlider(value: $gValue, textColor: .blue)
-                    colorSlider(value: $bValue, textColor: .green)
+                    colorSlider(value: $bValue, textColor: .blue)
+                    colorSlider(value: $gValue, textColor: .green)
                 }
                 HStack {
                     Text("R: \(Int(rValue * 255.0))")
