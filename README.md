@@ -2,12 +2,27 @@
 
 ![Screenshot](https://github.com/patrickmfsd/SwiftUI-Profile-Demo/blob/master/screenshots.png)
 
+## About
 A profile demo that use SwiftUI, which was announced at WWDC 2019.
+
+This demo app has:
+- Settings Page that apears as a Modal.
+- RGB Sliders to adjust header background
+- Settings screen uses `Form` with sections
+
+## TODO: 
+- [x] Add RGB Sliders to adjust header background
+- [x] Make Settings Page that apears as a Modal
+- [ ] Make Name and Subtitle feilds editable
+- [ ] Add editable Description feilds
 
 ## Requirements
 
 - Xcode 11 Beta
 - Swift 5.1
+
+### Optional
+- iPhone running iOS 13 Developer or Public Beta
 
 ## How To Use
 ⚠️ *This app is not available on the App Store.*
