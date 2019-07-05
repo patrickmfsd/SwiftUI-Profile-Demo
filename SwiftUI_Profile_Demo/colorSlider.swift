@@ -17,9 +17,9 @@ struct colorSlider: View {
             Text("0")
                 .color(textColor)
             Slider(value: $value, from: 0.0, through: 1.0)
-                .frame(width: 300)
+                .frame(width: 290)
             Text("255")
                 .color(textColor)
-            }.padding()
+        }
     }
 }

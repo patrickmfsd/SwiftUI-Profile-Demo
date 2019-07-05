@@ -13,6 +13,38 @@ struct ProfileView: View {
     @State var gValue: Double
     @State var bValue: Double
 
+    @State var isPresented = false
+    var SliderModalPresentation: some View {
+        NavigationView {
+            Form {
+                Section(header: Text("Header Background Color")) {
+                    colorSlider(value: $rValue, textColor: .red)
+                    colorSlider(value: $gValue, textColor: .green)
+                    colorSlider(value: $bValue, textColor: .blue)
+                    HStack {
+                        VStack {
+                            Rectangle()
+                                .frame(width: 100)
+                                .foregroundColor(Color(red: rValue, green: gValue, blue: bValue, opacity: 1.0))
+                        }
+                        VStack {
+                            Text("R: \(Int(rValue * 255.0))")
+                            Text("G: \(Int(gValue * 255.0))")
+                            Text("B: \(Int(bValue * 255.0))")
+                        }
+                    }
+                }
+            }
+
+            .navigationBarTitle(Text("Settings"))
+                .navigationBarItems(
+                    trailing: Button (action: { self.isPresented = false } ) { Text("Done")
+                        .color(.green)
+                    }
+            )
+        }
+    }
+
     var body: some View {
         VStack {
             VStack {
@@ -31,19 +63,19 @@ struct ProfileView: View {
                         .font(.subheadline)
                         .color(.gray)
                 }.padding()
-                VStack {
-                    Text("Use Sliders to Adjust Header Background Color:")
-                    colorSlider(value: $rValue, textColor: .red)
-                    colorSlider(value: $gValue, textColor: .green)
-                    colorSlider(value: $bValue, textColor: .blue)
-                }
-                HStack {
-                    Text("R: \(Int(rValue * 255.0))")
-                    Text("G: \(Int(gValue * 255.0))")
-                    Text("B: \(Int(bValue * 255.0))")
-                }
             }
             Spacer()
+            Button (action: { self.isPresented = true }, label: {
+                HStack {
+                    Image(systemName: "slider.horizontal.3")
+                        .imageScale(.large)
+                    Text("Settings")
+                        .bold()
+                        .accessibility(label: Text("Settings"))
+                }
+                .padding()
+            })
+                .presentation( isPresented ? Modal(SliderModalPresentation, onDismiss: { self.isPresented.toggle() }) : nil )
         }
     }
 }
