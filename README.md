@@ -13,8 +13,8 @@ This demo app has:
 ## TODO: 
 - [x] Add RGB Sliders to adjust header background
 - [x] Make Settings Page that apears as a Modal
-- [  ] Make Name and Subtitle feilds editable
-- [  ] Add editable Description feilds
+- [ ] Make Name and Subtitle feilds editable
+- [ ] Add editable Description feilds
 
 ## Requirements
 
