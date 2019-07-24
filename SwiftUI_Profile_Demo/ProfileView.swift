@@ -39,7 +39,7 @@ struct ProfileView: View {
             .navigationBarTitle(Text("Settings"))
                 .navigationBarItems(
                     trailing: Button (action: { self.isPresented = false } ) { Text("Done")
-                        .color(.green)
+                        .foregroundColor(.green)
                     }
             )
         }
@@ -61,7 +61,7 @@ struct ProfileView: View {
                         .font(.title)
                     Text("Software and Web Developer")
                         .font(.subheadline)
-                        .color(.gray)
+                        .foregroundColor(.gray)
                 }.padding()
             }
             Spacer()
@@ -75,8 +75,9 @@ struct ProfileView: View {
                 }
                 .padding()
             })
-                .presentation( isPresented ? Modal(SliderModalPresentation, onDismiss: { self.isPresented.toggle() }) : nil )
-        }
+        }.sheet(isPresented: $isPresented, content: {
+            self.SliderModalPresentation
+        })
     }
 }
 
