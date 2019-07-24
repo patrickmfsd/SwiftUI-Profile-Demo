@@ -23,7 +23,7 @@ struct ProfileView: View {
                     colorSlider(value: $bValue, textColor: .blue)
                     HStack {
                         VStack {
-                            Rectangle()
+                            Circle()
                                 .frame(width: 100)
                                 .foregroundColor(Color(red: rValue, green: gValue, blue: bValue, opacity: 1.0))
                         }
