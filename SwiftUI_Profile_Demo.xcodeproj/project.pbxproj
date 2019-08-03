@@ -50,6 +50,7 @@
 			children = (
 				CD6673E822B8CD5200ECC116 /* ProfileView.swift */,
 				77E8EDEE22B1EE4700EBE96C /* HeaderProfileView.swift */,
+				77E8EDF022B1EF0100EBE96C /* colorSlider.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -79,7 +80,6 @@
 				77E27A8022A624370074B3A7 /* AppDelegate.swift */,
 				77E27A8222A624370074B3A7 /* SceneDelegate.swift */,
 				77D3284A22CF5E0200A8807B /* View */,
-				77E8EDF022B1EF0100EBE96C /* colorSlider.swift */,
 				77E27A8E22A624390074B3A7 /* LaunchScreen.storyboard */,
 				77E27A9122A624390074B3A7 /* Info.plist */,
 				77E27A8B22A624390074B3A7 /* Preview Content */,
@@ -325,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 04;
 				DEVELOPMENT_ASSET_PATHS = "SwiftUI_Profile_Demo/Preview\\ Content";
 				DEVELOPMENT_TEAM = PU8ES8CS9S;
 				ENABLE_PREVIEWS = YES;
@@ -333,6 +334,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "patrickmfsd.SwiftUI-Profile-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -345,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 04;
 				DEVELOPMENT_ASSET_PATHS = "SwiftUI_Profile_Demo/Preview\\ Content";
 				DEVELOPMENT_TEAM = PU8ES8CS9S;
 				ENABLE_PREVIEWS = YES;
@@ -353,6 +356,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "patrickmfsd.SwiftUI-Profile-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
