@@ -14,12 +14,12 @@ struct colorSlider: View {
     
     var body: some View {
         HStack {
-            Text("0")
-                .color(textColor)
-            Slider(value: $value, from: 0.0, through: 1.0)
-                .frame(width: 290)
-            Text("255")
-                .color(textColor)
+            Text(verbatim: "0")
+                .foregroundColor(textColor)
+            Slider(value: $value, in: 0.0...1.0)
+            Text(verbatim: "255")
+                .foregroundColor(textColor)
+            
         }
     }
 }
