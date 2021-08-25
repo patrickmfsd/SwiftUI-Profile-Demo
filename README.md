@@ -23,7 +23,6 @@ This demo app has:
 - [ ] Implement Image Picker fro Profile
 
 ## Requirements
-
 - Xcode 12+
 - Swift 5.1+
 
@@ -35,4 +34,4 @@ This demo app has:
 
 1. Clone or download the project to your local machine
 2. Open the project in Xcode
-3. Run in Xcode Simulator or on a device running iOS 13 Developer Beta
+3. Run in Xcode Simulator or on a iPhone running iOS 13 or newer.
