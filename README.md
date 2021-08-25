@@ -3,14 +3,13 @@
 ![Screenshot](https://github.com/patrickmfsd/SwiftUI-Profile-Demo/blob/dev/screenshots.png)
 
 ## About
-A profile demo that use SwiftUI, which was announced at WWDC 2019.
+This basic application demos using SwiftUI to create a User Profile. The app features the following:
 
-This demo app has:
-- Settings Page that appears as a Modal.
+- Settings Page that appears as a `.sheet(...)` Modal.
 - RGB Sliders to adjust header background
-- Settings screen uses `Form` with sections
+- `@AppStorage` is used to store RGB Slider values and String values for Profile Text.
 
-## Changes: 
+## Change Log 
 ### v1
 - RGB Sliders to adjust header background
 - Make Settings Page that appears as a Modal
@@ -19,8 +18,8 @@ This demo app has:
 - Editable Name and Subtitle fields
 - Editable Description fields
 
-## Todo: 
-- [ ] Implement Image Picker fro Profile
+## Todo
+- [ ] Implement Image Picker for Profile Image
 
 ## Requirements
 - Xcode 12+
