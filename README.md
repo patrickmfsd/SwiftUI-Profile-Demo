@@ -24,8 +24,6 @@ This basic application demos using SwiftUI to create a User Profile. The app fea
 ## Requirements
 - Xcode 12+
 - Swift 5.1+
-
-### Optional
 - iPhone running iOS 14+
 
 ## How To Use
