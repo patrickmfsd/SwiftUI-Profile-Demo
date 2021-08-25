@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77CAC0CC26D617FE00A5A058 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CAC0CB26D617FE00A5A058 /* SettingsView.swift */; };
+		77CAC0CE26D6190B00A5A058 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CAC0CD26D6190B00A5A058 /* UserSettings.swift */; };
 		77E27A8122A624370074B3A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E27A8022A624370074B3A7 /* AppDelegate.swift */; };
 		77E27A8322A624370074B3A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E27A8222A624370074B3A7 /* SceneDelegate.swift */; };
 		77E27A8D22A624390074B3A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E27A8C22A624390074B3A7 /* Preview Assets.xcassets */; };
 		77E27A9022A624390074B3A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E27A8E22A624390074B3A7 /* LaunchScreen.storyboard */; };
 		77E8EDED22B1EC5600EBE96C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E8EDEC22B1EC5600EBE96C /* Assets.xcassets */; };
-		77E8EDEF22B1EE4700EBE96C /* HeaderProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E8EDEE22B1EE4700EBE96C /* HeaderProfileView.swift */; };
+		77E8EDEF22B1EE4700EBE96C /* HeaderBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E8EDEE22B1EE4700EBE96C /* HeaderBanner.swift */; };
 		77E8EDF122B1EF0100EBE96C /* colorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E8EDF022B1EF0100EBE96C /* colorSlider.swift */; };
 		CD6673E922B8CD5200ECC116 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6673E822B8CD5200ECC116 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77CAC0CB26D617FE00A5A058 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		77CAC0CD26D6190B00A5A058 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		77E27A7D22A624370074B3A7 /* SwiftUI_Profile_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Profile_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E27A8022A624370074B3A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77E27A8222A624370074B3A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +33,7 @@
 		77E27AA522A624390074B3A7 /* SwiftUI_ExperimentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ExperimentUITests.swift; sourceTree = "<group>"; };
 		77E27AA722A624390074B3A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77E8EDEC22B1EC5600EBE96C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		77E8EDEE22B1EE4700EBE96C /* HeaderProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfileView.swift; sourceTree = "<group>"; };
+		77E8EDEE22B1EE4700EBE96C /* HeaderBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBanner.swift; sourceTree = "<group>"; };
 		77E8EDF022B1EF0100EBE96C /* colorSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorSlider.swift; sourceTree = "<group>"; };
 		CD6673E822B8CD5200ECC116 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,8 +53,10 @@
 			isa = PBXGroup;
 			children = (
 				CD6673E822B8CD5200ECC116 /* ProfileView.swift */,
-				77E8EDEE22B1EE4700EBE96C /* HeaderProfileView.swift */,
+				77E8EDEE22B1EE4700EBE96C /* HeaderBanner.swift */,
 				77E8EDF022B1EF0100EBE96C /* colorSlider.swift */,
+				77CAC0CB26D617FE00A5A058 /* SettingsView.swift */,
+				77CAC0CD26D6190B00A5A058 /* UserSettings.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -140,7 +146,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "Patrick Mifsud";
 				TargetAttributes = {
 					77E27A7C22A624370074B3A7 = {
@@ -187,8 +193,10 @@
 				77E8EDF122B1EF0100EBE96C /* colorSlider.swift in Sources */,
 				77E27A8122A624370074B3A7 /* AppDelegate.swift in Sources */,
 				CD6673E922B8CD5200ECC116 /* ProfileView.swift in Sources */,
+				77CAC0CC26D617FE00A5A058 /* SettingsView.swift in Sources */,
+				77CAC0CE26D6190B00A5A058 /* UserSettings.swift in Sources */,
 				77E27A8322A624370074B3A7 /* SceneDelegate.swift in Sources */,
-				77E8EDEF22B1EE4700EBE96C /* HeaderProfileView.swift in Sources */,
+				77E8EDEF22B1EE4700EBE96C /* HeaderBanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +240,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -256,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -292,6 +301,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -310,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -334,7 +344,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = "patrickmfsd.SwiftUI-Profile-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -356,7 +366,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = "patrickmfsd.SwiftUI-Profile-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
